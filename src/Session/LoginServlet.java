@@ -15,8 +15,8 @@ public class LoginServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         PrintWriter pw = response.getWriter();
-        //假设正确的用户名 是itcast 密码是123
-        if (("itcast").equals(username) && ("123").equals(password)) {
+
+        if (("456").equals(username) && ("123").equals(password)) {
             User user = new User();
             user.setUsername(username);
             user.setPassword(password);
