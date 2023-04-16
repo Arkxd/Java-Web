@@ -18,10 +18,9 @@ public class IndexServlet extends HttpServlet {
         } else {
             response.getWriter().print("您已登录，欢迎你，" + user.getUsername() + "！");
             response.getWriter().print("<a href='LogoutServlet'>退出</a>");
-            // 创建Cookie存放Session的标识号
             Cookie cookie = new Cookie("JSESSIONID", session.getId());
             cookie.setMaxAge(60 * 30);
-            cookie.setPath("/Java Web");
+            cookie.setPath("/Java-Web");
         }
     }
 

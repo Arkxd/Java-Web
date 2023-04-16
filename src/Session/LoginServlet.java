@@ -21,7 +21,7 @@ public class LoginServlet extends HttpServlet {
             user.setUsername(username);
             user.setPassword(password);
             request.getSession().setAttribute("user", user);
-            response.sendRedirect("/chapter05/IndexServlet");
+            response.sendRedirect("IndexServlet");
         } else {
             pw.write("用户名或密码错误，登录失败");
         }

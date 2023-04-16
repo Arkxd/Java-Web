@@ -11,6 +11,11 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  <form name="reg" action="LoginServlet"
+        method="post">
+    用户名: <input name="username" type="text"/><br/>
+    密码：  <input name="password" type="password"/><br/>
+    <input type="submit" value="提交" id="bt"/>
+  </form>
   </body>
 </html>

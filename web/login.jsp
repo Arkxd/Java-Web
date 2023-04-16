@@ -17,6 +17,5 @@
     密码：  <input name="password" type="password"/><br/>
     <input type="submit" value="提交" id="bt"/>
 </form>
-
 </body>
 </html>
