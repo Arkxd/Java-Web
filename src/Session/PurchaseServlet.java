@@ -40,7 +40,7 @@ public class PurchaseServlet extends HttpServlet {
 
         String url = "CartServlet";
         response.sendRedirect(url);
-        String newurl = response.encodeRedirectURL(url);
-        //response.sendRedirect(newurl);
+//        String newurl = response.encodeRedirectURL(url);
+//        response.sendRedirect(newurl);
     }
 }
